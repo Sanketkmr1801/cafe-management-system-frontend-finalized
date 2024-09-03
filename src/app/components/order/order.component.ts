@@ -25,6 +25,9 @@ export class OrderComponent implements OnInit {
   loadOrders(): void {
     this.orderService.getOrders().subscribe((data: Order[]) => {
       this.orders = data;
+      // for(let o of this.orders) {
+      //   console.log(o)
+      // }
     });
   }
 
