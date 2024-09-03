@@ -1,0 +1,25 @@
+<div class="container mt-4">
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="userName">User Name:</label>
+      <input id="userName" formControlName="userName" class="form-control" placeholder="Enter user name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input id="email" formControlName="email" type="email" class="form-control" placeholder="Enter email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="passwordHash">Password:</label>
+      <input id="passwordHash" formControlName="passwordHash" type="password" class="form-control" placeholder="Enter password" required>
+    </div>
+
+    <div class="form-group">
+      <label for="lastOrderPrice">Last Order Price:</label>
+      <input id="lastOrderPrice" formControlName="lastOrderPrice" type="number" class="form-control" placeholder="Enter last order price" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Add User</button>
+  </form>
+</div>

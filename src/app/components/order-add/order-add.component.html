@@ -1,0 +1,20 @@
+<div class="container mt-4">
+  <form [formGroup]="orderForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="user"></label>
+      <input id="user" formControlName="userID" type="number" class="form-control" placeholder="Enter User ID" required>
+    </div>
+
+    <h3 class="mt-4">Menu Items</h3>
+    <ul class="list-group">
+      <li *ngFor="let item of menuItems" class="list-group-item d-flex justify-content-between align-items-center">
+        <div>
+          <span class="font-weight-bold">{{ item.Name }}</span> - {{ item.Price | currency }}
+        </div>
+        <input type="number" class="form-control w-25" placeholder="Quantity" (change)="onAddItem(item.MenuItemID, $event, item.Price)">
+      </li>
+    </ul>
+
+    <button type="submit" class="btn btn-primary mt-4">Place Order</button>
+  </form>
+</div>

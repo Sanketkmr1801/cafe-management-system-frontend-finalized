@@ -1,0 +1,53 @@
+nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  nav ul li a.active {
+    font-weight: bold;
+  }
+
+.navbar-nav.ml-auto {
+  margin-left: auto;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 10px; /* Space between nav items */
+}
+
+.navbar-nav .btn-outline-danger {
+  margin-left: 10px; /* Space between Place Order and Logout */
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+}
+
+/* Add padding to the main title */
+.navbar-brand {
+  padding-left: 1.5rem; /* Adjust as needed */
+  padding-right: 1.5rem; /* Adjust as needed */
+}
+
+/* Remove green background from Place Order button */
+.btn-custom {
+  background-color: transparent; /* Remove any background color */
+  border: none; /* Remove border if present */
+}
+
+/* Add a hover effect for the Place Order button */
+.btn-custom:hover {
+  background-color: #f8f9fa; /* Light background on hover */
+  color: #007bff; /* Change text color on hover */
+}

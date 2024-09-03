@@ -1,0 +1,30 @@
+<div class="container mt-4">
+    <h2>Inventory</h2>
+    <button class="btn btn-primary mb-3" (click)="addInventory()">Add Inventory</button>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>InventoryID</th>
+          <th>ItemName</th>
+          <th>Quantity</th>
+          <th>UnitPrice</th>
+          <th>TotalValue</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let inventory of inventories">
+          <td>{{ inventory.InventoryID }}</td>
+          <td>{{ inventory.ItemName }}</td>
+          <td>{{ inventory.Quantity }}</td>
+          <td>{{ inventory.UnitPrice }}</td>
+          <td>{{ inventory.TotalValue }}</td>
+          <td>
+            <button class="btn btn-sm btn-warning" (click)="editInventory(inventory)">Edit</button>
+            <button class="btn btn-sm btn-danger" (click)="deleteInventory(inventory.InventoryID)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

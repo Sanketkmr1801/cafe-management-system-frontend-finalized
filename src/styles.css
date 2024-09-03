@@ -1,0 +1,48 @@
+.btn-danger {
+  margin: 0 0 0 0.5rem; /* Adjust as needed */
+}
+
+.btn-edit {
+    margin: 0 0 0 0.5rem; /* Adjust as needed */
+}
+
+.btn-info {
+    margin: 0 0 0 0.5rem; /* Adjust as needed */
+}
+
+.btn {
+    margin: 0 0 0 0.5rem; /* Adjust as needed */
+}
+
+/* styles.css or component-specific CSS */
+body {
+    font-family: 'Lora', serif; /* Change to your chosen font */
+    color: #4a4a4a; /* A soft, dark gray for readability */
+    background-color: #f9f9f9; /* Light background color for a cozy feel */
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Pacifico', cursive; /* Add a fun, café-styled font to headings */
+    color: #6d4c41; /* A warm, coffee-like brown */
+    margin-bottom: 0.5rem; /* Add spacing between headings and other elements */
+  }
+  
+  p {
+    line-height: 1.6; /* Increase line height for readability */
+    font-size: 1.1rem; /* Slightly larger font size for a welcoming feel */
+  }
+  
+  button {
+    font-family: 'Lora', serif; /* Keep button text consistent with body text */
+    font-size: 1rem; /* Adjust button font size */
+    border-radius: 0.3rem; /* Slightly rounded corners for a softer look */
+  }
+  
+  /* Example of a specific café-styled class */
+  .cafe-text {
+    font-family: 'Pacifico', cursive; /* Apply this font to specific elements */
+    color: #8d6e63; /* A light brown color to match a café theme */
+    text-align: center; /* Center align the text */
+    margin-top: 1rem; /* Space above the text */
+  }
+  
